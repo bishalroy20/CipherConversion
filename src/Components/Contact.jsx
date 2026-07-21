@@ -3,33 +3,43 @@ import React from "react";
 function Contact() {
   const people = [
     {
-      name: "Alice Johnson",
-      email: "alice@example.com",
+      name: "Nayeen",
+      Reg: '2021331505',
       image: "https://via.placeholder.com/150"
     },
     {
-      name: "Bob Smith",
-      email: "bob@example.com",
+      name: "Abdullah",
+      Reg: '2021331511',
       image: "https://via.placeholder.com/150"
     },
     {
-      name: "Charlie Davis",
-      email: "charlie@example.com",
+      name: "Bishal",
+      Reg: '2021331518',
       image: "https://via.placeholder.com/150"
     },
     {
-      name: "Diana Lee",
-      email: "diana@example.com",
+      name: "Rajon",
+      Reg: '2021331527',
       image: "https://via.placeholder.com/150"
     },
     {
-      name: "Ethan Brown",
-      email: "ethan@example.com",
+      name: "Yeasin",
+      Reg: '2021331543',
       image: "https://via.placeholder.com/150"
     },
     {
-      name: "Fiona White",
-      email: "fiona@example.com",
+      name: "Adnan",
+      Reg: '2021331545',
+      image: "https://via.placeholder.com/150"
+    },
+    {
+      name: "Pinak",
+      Reg: '2021331557',
+      image: "https://via.placeholder.com/150"
+    },
+    {
+      name: "Robiul",
+      Reg: '2021331564',
       image: "https://via.placeholder.com/150"
     }
   ];

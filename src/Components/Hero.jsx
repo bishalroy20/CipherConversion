@@ -37,7 +37,7 @@ export default function Hero() {
         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
 
           <a
-            href="/convert"
+            href="/caesar"
             className="px-7 py-3 rounded-lg font-semibold bg-cyan-500 text-black hover:bg-cyan-400 transition shadow-lg shadow-cyan-500/20"
           >
             Start Converting

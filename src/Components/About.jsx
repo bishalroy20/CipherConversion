@@ -49,6 +49,22 @@ function About() {
             </p>
           </div>
         </div>
+<br/>
+        {/* Hill Cipher */}
+<div>
+  <h2 className="text-xl font-semibold text-cyan-400 mb-2">
+    Hill Cipher
+  </h2>
+  <p className="text-gray-400">
+    Hill Cipher is a polygraphic substitution cipher that uses linear algebra
+    and matrix multiplication to encrypt blocks of letters. Each block of
+    plaintext is converted into numerical values and multiplied by a key matrix
+    modulo 26 to produce the ciphertext. Decryption requires the modular
+    inverse of the key matrix, making the choice of a valid key essential. The
+    Hill Cipher demonstrates how mathematical concepts can be applied to
+    classical cryptography.
+  </p>
+</div>
 
         <p className="text-gray-300 mt-8 text-lg leading-relaxed">
           Together, these ciphers illustrate how encryption techniques evolved from

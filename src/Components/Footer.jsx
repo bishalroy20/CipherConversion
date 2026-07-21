@@ -23,7 +23,7 @@ export default function Footer() {
           </h3>
           <ul className="space-y-2">
             <li><a href="/" className="hover:text-cyan-400">Home</a></li>
-            <li><a href="/convert" className="hover:text-cyan-400">Convert</a></li>
+            <li><a href="/caesar" className="hover:text-cyan-400">Convert</a></li>
             <li><a href="/about" className="hover:text-cyan-400">About</a></li>
             <li><a href="/contact" className="hover:text-cyan-400">Contact</a></li>
           </ul>

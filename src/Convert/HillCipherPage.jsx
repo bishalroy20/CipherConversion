@@ -5,6 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Tesseract from "tesseract.js";
 import * as pdfjsLib from "pdfjs-dist";
 import { GlobalWorkerOptions } from "pdfjs-dist/build/pdf";
+import HillTheory from "../Theory/HillTheory";
 
 // PDF Worker
 GlobalWorkerOptions.workerSrc = new URL(
@@ -145,13 +146,11 @@ const hillDecrypt = (text, key) => {
 
     const p1 =
       (inverseMatrix[0][0] * c1 +
-        inverseMatrix[0][1] * c2) %
-      26;
+        inverseMatrix[0][1] * c2) % 26;
 
     const p2 =
       (inverseMatrix[1][0] * c1 +
-        inverseMatrix[1][1] * c2) %
-      26;
+        inverseMatrix[1][1] * c2) % 26;
 
     result += String.fromCharCode(
       ((p1 + 26) % 26) + 65
@@ -160,6 +159,11 @@ const hillDecrypt = (text, key) => {
     result += String.fromCharCode(
       ((p2 + 26) % 26) + 65
     );
+  }
+
+  // Remove only the padding X added during encryption
+  if (result.endsWith("X")) {
+    result = result.slice(0, -1);
   }
 
   return result;
@@ -439,13 +443,14 @@ export default function HillCipherPage() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-white py-12 px-4">
+      <HillTheory/>
       <ToastContainer
         position="top-right"
         autoClose={2000}
         theme="dark"
       />
 
-      <div className="max-w-5xl mx-auto bg-slate-900 border border-slate-800 rounded-2xl p-8">
+      <div className="max-w-5xl mx-auto bg-slate-900 border border-slate-800 rounded-2xl p-8 mt-10">
 
         {/* TITLE */}
         <h1 className="text-3xl font-bold text-center mb-8">

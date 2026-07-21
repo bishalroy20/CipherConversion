@@ -1,4 +1,6 @@
 import CipherBlocks from "./Cipherblocks";
+import CipherFAQ from "./CipherFAQ";
+import CryptoTip from "./CryptoTip";
 import Hero from "./Hero";
 
 
@@ -9,6 +11,8 @@ const Home = () => {
             <Hero/>
 
             <CipherBlocks/>
+            <CryptoTip/>
+            <CipherFAQ/>
         </div>
     )
 };

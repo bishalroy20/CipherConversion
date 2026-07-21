@@ -5,6 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Tesseract from "tesseract.js";
 import * as pdfjsLib from "pdfjs-dist";
 import { GlobalWorkerOptions } from "pdfjs-dist/build/pdf";
+import CaesarTheory from "../Theory/CaesarTheory";
 
 GlobalWorkerOptions.workerSrc = new URL(
   "pdfjs-dist/build/pdf.worker.min.js",
@@ -111,10 +112,13 @@ export default function CaesarPage() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-white px-4 py-10">
+      <CaesarTheory />
+
+
       <ToastContainer theme="dark" position="top-right" autoClose={2000} />
 
       {/* Card */}
-      <div className="max-w-5xl mx-auto bg-slate-900/60 backdrop-blur-lg border border-slate-800 rounded-2xl shadow-xl p-4 sm:p-8">
+      <div className="max-w-5xl mx-auto bg-slate-900/60 backdrop-blur-lg border border-slate-800 rounded-2xl shadow-xl p-4 mt-10 sm:p-8">
 
         {/* Title */}
         <h1 className="text-2xl sm:text-4xl font-bold text-center text-white">

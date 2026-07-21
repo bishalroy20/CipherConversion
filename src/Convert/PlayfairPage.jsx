@@ -5,6 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Tesseract from "tesseract.js";
 import * as pdfjsLib from "pdfjs-dist";
 import { GlobalWorkerOptions } from "pdfjs-dist/build/pdf";
+import PlayfairTheory from "../Theory/PlayfairTheory";
 
 // ✅ Configure pdf.js worker
 GlobalWorkerOptions.workerSrc = new URL(
@@ -228,8 +229,10 @@ export default function PlayfairPage() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-white py-12 px-4">
+
+      <PlayfairTheory />
       <ToastContainer position="top-right" autoClose={2000} theme="dark" />
-      <div className="max-w-5xl mx-auto bg-slate-900 border border-slate-800 rounded-2xl p-8">
+      <div className="max-w-5xl mx-auto bg-slate-900 border border-slate-800 rounded-2xl p-8 mt-10">
         <h1 className="text-3xl font-bold text-center mb-8">
           Playfair Cipher Converter
         </h1>
